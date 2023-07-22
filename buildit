@@ -1,0 +1,2 @@
+#!/bin/zsh
+GOOS=js GOARCH=wasm GOPATH=$PWD/packages go build -o public/js/main.wasm src/main.go
