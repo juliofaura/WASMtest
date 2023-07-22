@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strconv"
 	"syscall/js"
+	"time"
 )
 
 func performCalculation() {
@@ -38,6 +39,10 @@ func main() {
 	ctx.Call("fillRect", 0, 0, 200, 50)
 	ctx.Call("strokeText", "Calcular", 10, 35)
 
-	ch := make(chan struct{})
-	<-ch
+	for {
+		dom.Show("mrBean")
+		time.Sleep(time.Second)
+		dom.Hide("mrBean")
+		time.Sleep(time.Second)
+	}
 }
