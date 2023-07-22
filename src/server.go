@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	log.Println("Server listening on port 3001")
-	http.ListenAndServe(":3001", http.FileServer(http.Dir("public/")))
+	log.Println("Server listening on port 3000")
+	http.ListenAndServe(":3000", http.FileServer(http.Dir("public/")))
 }
