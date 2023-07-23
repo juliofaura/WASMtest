@@ -1,11 +1,12 @@
 package main
 
 import (
-	"dom"
 	"fmt"
 	"strconv"
 	"syscall/js"
 	"time"
+
+	"github.com/juliofaura/WASMtest/src/dom"
 )
 
 func performCalculation() {
@@ -22,6 +23,8 @@ func performCalculation() {
 }
 
 func main() {
+
+	// Start interacting with the DOM
 	dom.Hide("loading")
 	dom.Show("calc")
 

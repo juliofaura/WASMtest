@@ -1,3 +1,3 @@
 #!/bin/zsh
-GOOS=js GOARCH=wasm GOPATH=$PWD/packages go build -o public/js/main.wasm src/main.go
+GOOS=js GOARCH=wasm go build -o public/js/main.wasm src/main.go
 #GOOS=js GOARCH=wasm GOPATH=$PWD/packages tinygo build -o public/js/main.wasm -no-debug src/main.go
