@@ -45,7 +45,7 @@ func setGoals(team Team, howMany uint) {
 	goals[team] = howMany
 }
 
-func updateGoals(team Team) {
+func updateGoals() {
 }
 
 func main() {
